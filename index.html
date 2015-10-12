@@ -4,14 +4,14 @@ root: .
 venue: Pacific Northwest National Laboratory
 address: LSB Mt St Helens, 902 Battelle Blvd, Richland, WA 99354
 country: us
-language: eg   
+language: en
 latlng: 46.345416, -119.279143
 humandate: Nov 2-3, 2015
 humantime: 9:00 am - 4:30 pm
 startdate: 2015-11-03
 enddate: 2015-11-04
-instructor: Ben Weinstein, Donny Winston
-helper: tbd
+instructor: ["Ben Weinstein", "Donny Winston"]
+helper: ["TBD"]
 contact: Nicole Nichols <nicole.nichols@pnnl.gov>
 etherpad:         # optional (insert the URL for your Etherpad if you're using one)
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
@@ -288,6 +288,11 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   that may be useful on the
   <a href = "https://github.com/swcarpentry/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
+<p>
+  Once you are done installing the software listed below,
+  please go to <a href="setup/index.html">this page</a>,
+  which has instructions on how to test that everything was installed correctly.
+</p>
 
 <div id="shell"> <!-- Start of 'shell' section. -->
   <h3>The Bash Shell</h3>
@@ -511,11 +516,68 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
     </div>
   </div>
   <p>
+</div> <!-- End of 'Python' section. -->
+
+
+
+<div id="sql"> <!-- Start of 'SQL' section. -->
+  <h3>SQL</h3>
+
+  <p>
+    For the SQL lessons, we will use the <a href="https://www.sqlite.org/">SQLite</a> relational
+    database management system, which comes pre-installed on most operating
+    systems (though you can find downloads <a href="http://www.sqlite.org/download.html">here</a>).
+    While these instructions are specific to SQLite, most other database
+    management systems (e.g. MySQL, Oracle, PostGreSQL) have similar functions
+    for loading data and performing basic operations.
+  </p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h4 id="sql-windows">Windows</h4>
+      <p> The <a href="{{site.swc_installer}}">Software Carpentry Windows installer</a> installs SQLite for you (run as <code>sqlite3</code>).</p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="sql-macosx">Mac OS X</h4>
+      <p><code>sqlite3</code> comes pre-installed.</p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="sql-linux">Linux</h4>
+      <p><code>sqlite3</code> comes pre-installed.</p>
+    </div>
+  </div>
+</div> <!-- End of 'SQL' section. -->
+
+<div id="mongo"> <!-- Start of 'MongoDB' section. -->
+  <h3>MongoDB (optional)</h3>
+
+  <p>
+    MongoDB is a document database system that is an alternative to relational database systems (e.g. SQL). If there is time, we may introduce this so-called "NoSQL" system and discuss benefits and drawbacks relative to SQL. Fun fact: one of the instructors uses MongoDB extensively for scientific data management. If you wish to follow along, you can install MongoDB on your system.
+  </p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h4 id="mongo-windows">Windows</h4>
+      <p>You can find installation instructions <a href="https://www.mongodb.org/downloads">here</a>.</p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="mongo-macosx">Mac OS X</h4>
+      <p>You can find installation instructions <a href="https://www.mongodb.org/downloads">here</a></p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="sql-linux">Linux</h4>
+      <p>You can find installation instructions <a href="https://www.mongodb.org/downloads">here</a>.</p>
+    </div>
+  </div>
+</div> <!-- End of 'MongoDB' section. -->
+
+<p style="margin-top:2em;">
   Once you are done installing the software listed above,
   please go to <a href="setup/index.html">this page</a>,
   which has instructions on how to test that everything was installed correctly.
-  </p>
-</div> <!-- End of 'Python' section. -->
+</p>
+
+
 
 
 <!--
